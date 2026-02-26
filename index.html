@@ -3,21 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chathunga Bimsara - Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-</head>
+    <title>Chathunga Bimsara | Spftware Engineer</title>
+    <!-- font-awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    </head>
 <body>
 
     <header>
         <div class="logo-container">
-            <img src="assest/CB Logo.png" alt="CB Logo" class="logo-icon" width="50px">
-            <span class="logo-text">Chathunga Bimsara</span>
+            <a class="logo" href="/index.html">
+                <img src="assest/CB Logo.png" alt="CB Logo" class="logo-icon" width="50px" />
+                <span class="logo-text">Chathunga Bimsara</span>
+            </a>
+            
         </div>
 
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
+                <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#work">Work</a></li>
@@ -26,35 +39,34 @@
             </ul>
         </nav>
 
-        <!-- <div class="theme-toggle">
-            <button aria-label="Toggle dark and light theme">
-                <img src="sun-icon-placeholder.png" alt="Theme Toggle">
-            </button>
-        </div> -->
-
-        <div> 
-            
-        </div>
+        <label class="mode">
+            <input type="checkbox" checked="checked" id="darkModeButton" />
+            <i class="fa-solid fa-sun"></i>
+            <i class="fa-solid fa-moon"></i>
+        </label>
     </header>
 
     <main>
-        <section class="hero-section">
-            
+        <!-- Home -->
+        <section id="hero">
             <div class="hero-content">
                 <h3>Hello ! It's Me</h3>
                 <h1>Chathunga Bimsara</h1>
                 <h2>And I'm a </h2>
 
                 <div class="social-icons">
-                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/chathunga-bimsara-02a728387/" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+                    <a href="https://github.com/chathunga2007" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a>
+                    <a href="https://web.facebook.com/profile.php?id=61571681231357" target="_blank"><i class="fa-brands fa-facebook fa-2x"></i></a>
+                    <a href="https://www.youtube.com/@chathungabimsara2007" target="_blank"><i class="fa-brands fa-youtube fa-2x"></i></a>
+                    <a href="https://www.instagram.com/chathunga200711/" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                    <a href="https://x.com/ChathungaB2007" target="_blank"><i class="fa-brands fa-x-twitter fa-2x"></i></a>
                 </div><br></br>
 
-                <a href="assest/Chathunga Bimsara CV.pdf" class="download-btn" download>Download CV</a>
+                <a href="assest/Chathunga Bimsara CV.pdf" download="My CV">
+                    <button class="btn-section" >Download CV</button>
+                </a>
+                
             </div>
 
             <div class="hero-image">
@@ -62,8 +74,71 @@
                     <img src="assest/My photo.png" alt="My Photo" width="300x">
                 </div>
             </div>
-
+            <div class="arrow bounce"><i class="fa-solid fa-angle-down"></i></div>
         </section>
+
+        <!-- About -->
+         <section id="about">
+            <h1 class="heading">Who <span>I am</span></h1>
+            <div id="about-grid">
+                <div id="about-img">
+                    <div class="overlay">
+                        <img src="assest/My Photo 2.jpg" width="300px" />
+                    </div>
+                </div>
+
+                <div id="about-text">
+                    <h3>I’m a Passionate Undergraduate Software Engineer & Aspiring Full Stack Developer</h3>
+                    <p>Hello, I’m Chathunga Bimsara. I began my journey in Software Engineering in 2025, 
+                        when I joined IJSE - Institute of Software Engineering. Since then, I’ve been dedicating 
+                        my time to learning, practicing, and building a strong foundation in software development.
+                    </p>
+                    <p>I’m passionate about exploring modern technologies and continuously improving my skills 
+                        through hands on projects and collaboration. I enjoy every stage of the development process
+                        from understanding requirements and problem-solving to designing and implementing 
+                        effective solutions.
+                    </p>
+                    <p>I’m motivated, eager to learn, and always open to new challenges that help me grow 
+                        as a developer.
+                    </p>
+                    <p>Looking forward to learning, building, and connecting with like-minded people in the 
+                        tech world! 🚀
+                    </p><br/>
+
+                    <div class="social-icons">
+                        <a href="https://github.com/chathunga2007" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a>
+                        <a href="https://www.linkedin.com/in/chathunga-bimsara-02a728387/" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+
+                        <a href="#project">
+                            <button class="btn-section" type="menu">Projects</button> 
+                        </a>
+                        <a href="#contact">
+                            <button class="btn-section" type="menu">Contact</button>
+                        </a>
+                    </div><br />
+                </div>
+            </div>
+         </section>
+
+         <!-- Key Skills -->
+          <section class="key-skills">
+            <h2>Key <span>Skills</span></h2>
+            <div class="skill">
+                <img src="assest/Skills/java_5968282.png" alt="" width="150px"/>
+                <img src="assest/Skills/python_5968350.png" alt="" width="150px" />
+                <img src="assest/Skills/docker_919853.png" alt="" width="150px"/>
+                <img src="assest/Skills/sql_7506880.png" alt="" width="150px"/>
+                <img src="assest/Skills/postgre_5968342.png" alt="" width="150px"/>
+                <img src="assest/Skills/html-5_5968267.png" alt="" width="150px"/>
+                <img src="assest/Skills/css-3_5968242.png" alt=""width="150px"/>
+            </div><br />
+          </section>
+
+          <!-- Education -->
+           <section id="education">
+                <h1><Span>Educations</Span> & <span>Qualifications</span></h1>
+                
+           </section>
     </main>
 
 </body>
